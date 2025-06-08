@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Popup</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body style="margin: 0; background: transparent">
+    <!-- Definition Mode -->
+    <div class="popup-container" data-mode="definition">
+      <div class="popup-header">
+        <div class="popup-title">Definition</div>
+        <button class="popup-close" title="Close">×</button>
+      </div>
+      <div class="word-display" id="selectedWord">Loading...</div>
+      <div id="contentArea">
+        <div id="definitionTemplate" class="definition-card state">
+          <div class="pronunciation" id="pronunciationEl"></div>
+          <div class="part-of-speech" id="partOfSpeechEl"></div>
+          <div class="definition" id="definitionEl"></div>
+          <div class="example" id="exampleEl"></div>
+        </div>
+        <div id="loadingState" class="loading-state state">
+          <div class="loading-spinner definition-spinner"></div>
+          <span>Fetching definition...</span>
+        </div>
+        <div id="errorState" class="error-state state">
+          <span>⚠️</span>
+          <span id="errorMessage">Error loading definition</span>
+        </div>
+        <div id="emptyState" class="empty-state state">
+          <span id="emptyMessage">No definition found</span>
+        </div>
+      </div>
+      <p class="footer-title">Simplr</p>
+    </div>
+
+    <!-- Simplification Mode -->
+    <div class="popup-container" data-mode="simplify">
+      <div class="popup-header">
+        <div class="popup-title">Simplified</div>
+        <button class="popup-close" title="Close">×</button>
+      </div>
+      <div class="popup-content">
+        <div class="word-display" id="selectedWord">Loading...</div>
+        <div id="simplify-loading" class="loading-state state">
+          <div class="loading-spinner simplify-spinner"></div>
+          <span>Generating simplification...</span>
+        </div>
+        <div id="simplifyResult" class="simplification-content state"></div>
+      </div>
+      <p class="footer-title">Simplr</p>
+    </div>
+
+    <script src="../api.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
