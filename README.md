@@ -2,6 +2,7 @@
 
 Simplr is a Chrome extension that provides instant word definitions and AI-powered text simplification directly on any webpage. Designed for students, researchers, and everyday users, it helps you understand content without leaving your current tab.
 
+**Backend for Simplr Chrome Extension Repo:** [Simplr Backend](https://github.com/jaimzh/Simplr-be)
 ---
 
 ## Features
