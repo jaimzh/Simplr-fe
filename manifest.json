@@ -3,7 +3,6 @@
   "name": "Simplr – Instant Definitions & AI Text Simplification ",
   "version": "1.0",
   "description": "Get instant definitions or simplified explanations for selected text—without leaving the page.",
-  "permissions": ["activeTab"],
   "host_permissions": ["<all_urls>"],
   "content_scripts": [
     {
