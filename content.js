@@ -1,10 +1,4 @@
-
-console.log(
-  "🔔 Simplr extension loaded ",
-  location.href
-);
-
-let host
+let host;
 let popups = [];
 
 /**
